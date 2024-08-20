@@ -1,0 +1,4 @@
+For Real life Demo. Visit http://3.71.19.83:10000
+
+Abbey is a Power User (more capabilities). Username: abbey@lyricera.com    Password: lyricera12345
+Bernard is a normal User (less capabilities). Username: bernard@lyricera.com    Password: lyricera12345
