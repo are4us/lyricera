@@ -1,0 +1,16 @@
+Lyricera is a POC application. Its showcase Consensus and NFTs:
+
+Music is an integral part of our lives. Musically inclined people form bands and play music together.
+
+There are many great foreign songs. But, translating lyrics from one language to another is quite challenging, particularly that the literal translation (words and accents) may clash with the original melody. This makes literally translations weird.
+
+We have built a translation rating appliation. It does the following:
+- Use GenAI or Manually translate lyrics of foreign songs
+- Allow friends and band members to vote on the translation (based on the Non-Fungible Tokens on the Hedera Network)
+- Visualization of the Voting results
+
+Now, everyone has full transparency over the lyric translation and selection process.
+
+There are two parts to this application. (based on the Microservice pattern)
+- Front End GUI, based on a Low-Code / No-Code tool (typically runs on port 10000)
+- Back End Server, takes requests from the front end and interacts with the Hedera Network. (typically runs on port 3000)
