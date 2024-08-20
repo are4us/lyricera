@@ -1,0 +1,55 @@
+This is the front-end Server to the Lyricera POC project.
+To simplify the construction process (microservice design principle), we have based our GUI front-end on Budibase.
+
+Here are the steps to get started:
+1. Edit the docker-compose.yml file - provide your own OPENAI_API_KEY: {OPENAI_API_KEY} key
+2. To start the Docker Stack, run in the background mode $: docker-compose up -d 
+3. To shut off the Stack, run $: docker compose down
+
+Provide Admin Credentials:
+- Open your browser to http://localhost:10000/ , This will allow you to set up the start credentials
+1. Import the provided tar.gz file into your Budibase environment
+2. Click on the Edit Application button
+3. In the Data setup, update all the backend servers to the address, where your back-end is running.
+  - So, it will be something like http://127.0.0.1:3000/mint_nft ,  if you are running the backend on the localhost   
+  - If you really want to experiment with your own hedear account, please feel free to update various prepopulated fields. (not a must) 
+    In fact, the backend server is the one processing all the startup credentials. (so, check the .env file of the back-end server)
+4. Publish the application 
+
+Create User Account on Hedera Network
+5. You will be prompted to add Hedera account (user account).
+6. Click on the 'Generate HDR Account'. This lets you create a new Hedera Client Account. Click Save
+
+Create Base Lyric (from a foreign language)
+7. Click on the Lyrics link. This shows you all the Lyrics (some are already created by me). You can add more, view or edit existing ones.
+8. The Lyrics View Details show: Link to Hashscan (with the NFT ID), Translations Cards
+9. In the Edit Lyric, You can: Manually Add a Translation, or use OpenAI to Automatically generate a Translation
+
+Use GenAI to add Translation
+10 - 1. If you want to use GenAI (OpenAI) to speed up the things, click the "Auto Translate Lyric" button
+10 - 2. Now, you can seal a Translation by generating an NFT
+10 - 3. If everthing looks OK, you can finalize the Translation process by clicking the Save button. Note: NFT_ID, Treasury_Account_ID are filed in now.
+
+Now your go to the Translations
+11 - 0. The main table showing all translations. If you are a PowerUser, you can edit an item. If you are a Public or Basic User, you can only vi–ew (not edit) Lyrics and Translated_Lyrics
+11 - Click the "Vote" button to give your rating of a translations
+11 - 1. Select your vote rating and click on the "Generate Ballot" button to preview the Serial Number of the newly minted NFT token (based on a Translated Lyrics)
+11 - 2. Cast your vote to finalize the vote.
+
+Manage Votes
+12 - In the Vote table, you can view Votes. If you have casted that Vote, you can remove it. Otherwise, you can only view Votes, if they are created by other users.
+
+Vote Charts
+13 - In the Voting Charts, you can see the sentimentals. 
+   - The Purple circle shows a bar chart of Lyrics and the Generated Translations (counts).
+   - The Green circle shows both:
+     - The average Vote Value for a Lyric Translation (It is the sum of all vote values for a translation / number of votes for a translation)
+     - The table shows more details about Lyric Translations
+   - Additionally, there are filters, with which one can refine the charts.
+
+
+
+
+
+
+
