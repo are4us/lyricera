@@ -14,6 +14,7 @@ node_modules/*
 *.swo
 *.pid
 *.pid.lock
+.DS_Store
 
 # Ignore environment variable files
 .env
