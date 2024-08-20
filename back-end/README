@@ -1,0 +1,26 @@
+This is the Backend Server to the Lyricera POC project.
+It is a self-contained Node Express JS project, which talks to the Hedera Test Network and takes commands from the Lyricera Front-end.
+
+Here are the steps to get started.
+1. Add an .env file to the root of this folder (see env-example) with: ACCOUNT_PRIVATE_KEY, ACCOUNT_ID and PORT_NUMBER
+2. Install nodejs packages at the root of the folder: npm install
+3. Run it $: nohup node index.js ~ out.log 2>&1 &
+
+As long as it is running in the background, it is working OK.
+
+If you need to read the log in the console (to see the application is indeed running), use the following command:
+$: tail -f out.log
+
+The files and what do they do:
+- index.js: the main expressjs application
+- package.json: specify the dependent NodeJS packages
+- common-hdr-functions.js: Common Functions used to bootup connectivity to the Hedera Test Network and reading from the .env file
+- hdr-create-account.js: Create a new Hedera Account (will be used by the Lyricera Users), with the Master Account as the starting point
+- hdr-nft.js: A set of Hedera helper functions, including: 
+  - - associate_nft_token: Associate an existing NFT to another Hedera Account
+  - - create_nft: Create a new NFT
+  - - mint_nft: Mint a new serial based on a NFT token
+  - - burn_nft_serial: Burn a NFT serial token
+  - - transfer_nft_token: Transfer the ownership of a NFT token to another Hedera Account
+- env-example: the default environment file. rename it to .env
+- test_token_ids.txt: Some token and Owner IDs, used for the initial testing.

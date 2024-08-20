@@ -1,0 +1,3 @@
+ACCOUNT_PRIVATE_KEY={Master Hedera Account Private Key}
+ACCOUNT_ID={Master Hedera Account ID}
+PORT_NUMBER=3000

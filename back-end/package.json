@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "@hashgraph/sdk": "2.31.0",
+    "dotenv": "16.3.1",
+    "ethers": "5.7.2",
+    "js2xmlparser": "5.0.0",
+    "jsdoc": "4.0.3"
+  },
+  "name": "hdr-svr",
+  "version": "1.0.0",
+  "description": "Hedera-Server",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "test-hdr-svr"
+  },
+  "keywords": [
+    "Hedera",
+    "ExpressJS",
+    "Server"
+  ],
+  "author": "Raymond Gao",
+  "license": "ISC"
+}
