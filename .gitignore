@@ -1,0 +1,20 @@
+# Ignore node_modules directory
+node_modules/
+node_modules/*
+
+# Ignore hidden files and directories
+.*
+!.gitignore  # Allow the .gitignore file itself
+
+# Ignore other common temporary files and directories
+.DS_Store
+*.log
+*.tmp
+*.swp
+*.swo
+*.pid
+*.pid.lock
+
+# Ignore environment variable files
+.env
+.env.*
